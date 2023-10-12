@@ -7,10 +7,10 @@ int main()
     char line[4];
     fp = fopen("test.txt","r");
 
-    while(fgets(line,3,fp)!=NULL){
+    while(fgets(line,5,fp)!=NULL){
         strcat(buffer,line);
     }
 
-    printf("%s",buffer);
     fclose(fp);
+    printf("%s",buffer);
 }
