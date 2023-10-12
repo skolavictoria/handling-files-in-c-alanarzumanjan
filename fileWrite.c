@@ -6,7 +6,6 @@ int main()
     FILE *fp;
     fp = fopen("test.txt","w");
     fprintf(fp,"test text\n!!!!!");
-
     fclose(fp);
     return 0;
 }
