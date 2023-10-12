@@ -1,5 +1,5 @@
 #include <stdio.h>
-
+#include <string.h>
 int main()
 {
     char buffer[100];
@@ -10,7 +10,7 @@ int main()
     while(fgets(line,3,fp)!=NULL){
         strcat(buffer,line);
     }
-    
+
     printf("%s",buffer);
     fclose(fp);
 }
